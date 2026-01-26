@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+    gap: 20px;
+    display: flex;
+}
+
+header .sandrinha {
+    position: relative;
+    /*bottom: 50px;
+    left: 50%;*/
+    display: flex;
+    
+}
+
+.sandrinha {
+    height: 100px;
+    width: 100px;
+
+}
