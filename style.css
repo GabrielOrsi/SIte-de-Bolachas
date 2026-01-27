@@ -5,21 +5,10 @@
     text-decoration: none;
 }
 
-header {
-    text-align: center;
-    gap: 20px;
-    display: flex;
-}
-
-header .sandrinha {
-    position: relative;
-    /*bottom: 50px;
-    left: 50%;*/
-    display: flex;
-    
-}
 
 .sandrinha {
+    position: relative;
+    display: flex;
     height: 100px;
     width: 100px;
 
