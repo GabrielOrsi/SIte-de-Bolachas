@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -16,49 +19,84 @@
 
 <body>
     <header>
-        <div>
-            <a href="index.html" class="sandrinha"><img src="/img/SandrinhaBolachinha.png" alt=""></a>
-            <input type="text" id="pesquisa" placeholder="Buscar Produtos..." class="search-input">
-            <button id="searchBtn" class="search-btn">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-        </div>
-
-        <nav id="navegador" class="navegador">
-            <a href="/paginas/produtos.html">Produtos</a>
-            <a href="/paginas/localização.html">Localização</a>
-            <a href="/paginas/quemSomos.html">Quem Somos</a>
-            <a href="/paginas/faleConosco.html">Fale Conosco</a>
-        </nav>
-
-        <div class="slider">
-            <button class="btn prev">❮</button>
-
-            <div class="slides">
-                <div class="slide">
-                    <img src="img1.jpg" alt="Produto 1">
-                    <h3>Bolacha de Chocolate</h3>
-                    <p>R$ 12,00</p>
-                </div>
-
-                <div class="slide">
-                    <img src="img2.jpg" alt="Produto 2">
-                    <h3>Bolacha de Amendoim</h3>
-                    <p>R$ 10,00</p>
-                </div>
-
-                <div class="slide">
-                    <img src="img3.jpg" alt="Produto 3">
-                    <h3>Bolacha de Baunilha</h3>
-                    <p>R$ 11,00</p>
-                </div>
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="index.html" class="sandrinha" id="sandrinha"><img src="/img/SandrinhaBolachinha.png" alt=""></a>
+                <ul class="menu">
+                    <a href="/paginas/produtos.html">Produtos</a>
+                    <a href="/paginas/localização.html">Localização</a>
+                    <a href="/paginas/quemSomos.html">Quem Somos</a>
+                    <a href="/paginas/faleConosco.html">Fale Conosco</a>
+                </ul>
+                <div class="responsivo" id="responsivo">☰</div>
             </div>
 
-            <button class="btn next">❯</button>
-        </div>
+            <div class="nav-rigth">
+                <input type="text" id="pesquisa" placeholder="Buscar Produtos..." class="search-input">
+                <button id="searchBtn" class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+      
+        </nav>
+        <div class="slider">
+                <button class="btn-prev">❮</button>
+
+                <div class="slides">
+                    <div class="slide">
+                        <img src="img1.jpg" alt="Produto-1">
+                        <h3>Bolacha de Chocolate</h3>
+                        <p>R$ 12,00</p>
+                    </div>
+
+                    <div class="slide">
+                        <img src="img2.jpg" alt="Produto-2">
+                        <h3>Bolacha de Amendoim</h3>
+                        <p>R$ 10,00</p>
+                    </div>
+
+                    <div class="slide">
+                        <img src="img3.jpg" alt="Produto-3">
+                        <h3>Bolacha de Baunilha</h3>
+                        <p>R$ 11,00</p>
+                    </div>
+                </div>
+
+                <button class="btn-next">❯</button>
+            </div>
     </header>
 
-    <section>
+    <section id="card-favorito" class="favorito">
+        <article class="melhor">
+            <div class="texto">
+                <h1>A Melhor Bolacha da Cidade</h1>
+                <p>Venha conhecer a nossa bolacha de Coco, o carro chefe de toda a nossa produção, com os melhores
+                    produtos que temos no mercado, saborosa, crocante e deliciosa, cada mordida te leva a uma lembrança
+                </p>
+                <nav class="botao-melhor">
+                    <a href="/pagina.produtos/coco.html" id="produto" class="btn">Ver Produto</a>
+                    <a href="/carrinho/carrinho.html" class="btn-card">Carrinho</a>
+                </nav>
+                <ul class="informação">
+                    <li>
+                        <Strong>+500</Strong>
+                        Clientes Felizes
+                    </li>
+                    <li>
+                        <Strong>4.9</Strong>
+                        Avaliação⭐
+                    </li>
+                    <li>
+                        <strong>Rápida Entrega</strong>
+                        Peça, e entregamos o mais rápida
+                    </li>
+                </ul>
+
+            </div>
+            <div class="imagem">
+                <img src="https://vallefrutas.com.br/wp-content/uploads/coco-seco-1.png" alt="colocar foto coco">
+            </div>
+        </article>
 
     </section>
 

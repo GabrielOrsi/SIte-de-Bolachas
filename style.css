@@ -5,11 +5,88 @@
     text-decoration: none;
 }
 
-
-.sandrinha {
-    position: relative;
-    display: flex;
+.sandrinha img{
     height: 100px;
     width: 100px;
+}
 
+
+.navbar {
+    padding: 15px;
+    display: flex;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.responsivo {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.search-input {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+
+  .menu {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    background: #222;
+    width: 200px;
+    flex-direction: column;
+    padding: 15px;
+    display: none;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .hamburguer {
+    display: block;
+  }
+
+  .nav-top {
+    justify-content: space-between;
+  }
+
+}
+
+.melhor {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.texto .imagem {
+    flex: 1;
+
+}
+
+.imagem img {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .melhor {
+        flex-direction: column;
+    }
 }
