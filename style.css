@@ -8,6 +8,7 @@
 .sandrinha img {
     height: 100px;
     width: 100px;
+    right: 30px;
 }
 
 .navbar {
@@ -23,10 +24,10 @@
   gap: 20px;
 }
 
- .navbar .menu !important{
+ .menu {
   display: flex;
-  justify-content: center;
   gap: 20px;
+  justify-content: center;
   list-style: none;
 }
 
@@ -94,8 +95,7 @@
   }
 
   .responsivo {
-    margin-left: 221px;
-
+    margin-left: auto;
     display: block;
   }
 
@@ -108,8 +108,8 @@
     pointer-events: auto;
   }
 
-   .nav-right {
-    
+  .nav-right .search-input{
+    border-radius: 10px;
 
   
     
