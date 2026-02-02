@@ -19,63 +19,65 @@
 
 <body>
     <header>
-        <nav class="navbar">
+        <div class="background">
+            <nav class="navbar">
 
-            <div class="nav-left">
-                <a href="index.html" class="sandrinha" id="sandrinha"><img src="/img/SandrinhaBolachinha.png" alt=""></a>
-                
-                
+                <div class="nav-left">
+                    <a href="index.html" class="sandrinha" id="sandrinha"><img src="/img/SandrinhaBolachinha.png"
+                            alt=""></a>
 
-                <div class="responsivo" id="responsivo">☰</div>
 
-            </div>
 
-            <div class="overlay"></div>
+                    <div class="responsivo" id="responsivo">☰</div>
 
-            <div  id="nav-right" class="nav-right">
-
-                <input type="text" id="pesquisa" placeholder="Buscar Produtos..." class="search-input">
-                <button id="searchBtn" class="search-btn">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>   
-                
-            </div>
-      
-        </nav>
-
-           <ul class="menu">
-                    <span class="close-btn">&times;</span>
-                    <a href="/paginas/produtos.html">Produtos</a>
-                    <a href="/paginas/localização.html">Localização</a>
-                    <a href="/paginas/quemSomos.html">Quem Somos</a>
-                    <a href="/paginas/faleConosco.html">Fale Conosco</a>
-                </ul>
-
-        <div class="slider">
-                <button class="btn-prev">❮</button>
-
-                <div class="slides">
-                    <div class="slide">
-                        <img src="img1.jpg" alt="Produto-1">
-                        <h3>Bolacha de Chocolate</h3>
-                        <p>R$ 12,00</p>
-                    </div>
-
-                    <div class="slide">
-                        <img src="img2.jpg" alt="Produto-2">
-                        <h3>Bolacha de Amendoim</h3>
-                        <p>R$ 10,00</p>
-                    </div>
-
-                    <div class="slide">
-                        <img src="img3.jpg" alt="Produto-3">
-                        <h3>Bolacha de Baunilha</h3>
-                        <p>R$ 11,00</p>
-                    </div>
                 </div>
 
-                <button class="btn-next">❯</button>
+                <div class="overlay"></div>
+
+                <div id="nav-right" class="nav-right">
+
+                    <input type="text" id="pesquisa" placeholder="Buscar Produtos..." class="search-input">
+                    <button id="searchBtn" class="search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                </div>
+
+            </nav>
+
+            <ul class="menu">
+                <span class="close-btn">&times;</span>
+                <a href="/paginas/produtos.html">Produtos</a>
+                <a href="/paginas/localização.html">Localização</a>
+                <a href="/paginas/quemSomos.html">Quem Somos</a>
+                <a href="/paginas/faleConosco.html">Fale Conosco</a>
+            </ul>
+        </div>
+        <div class="slider">
+            <button class="btn-prev">❮</button>
+
+            <div class="slides">
+                <div class="slide">
+                    <img src="img1.jpg" alt="Produto-1">
+                    <h3>Bolacha de Chocolate</h3>
+                    <p>R$ 12,00</p>
+                </div>
+
+                <div class="slide">
+                    <img src="img2.jpg" alt="Produto-2">
+                    <h3>Bolacha de Amendoim</h3>
+                    <p>R$ 10,00</p>
+                </div>
+
+                <div class="slide">
+                    <img src="img3.jpg" alt="Produto-3">
+                    <h3>Bolacha de Baunilha</h3>
+                    <p>R$ 11,00</p>
+                </div>
             </div>
+
+            <button class="btn-next">❯</button>
+        </div>
     </header>
 
     <section id="card-favorito" class="favorito">
@@ -113,7 +115,7 @@
     </section>
 
     <main>
-        <section class="grid-produto"  id="grid-produto">
+        <section class="grid-produto" id="grid-produto">
             <div class="produto">
                 <h1>Fubá</h1>
                 <p>Bolacha Fubá</p>
@@ -135,5 +137,6 @@
 
 
 </body>
-    <script src="script.js"></script>
+<script src="script.js"></script>
+
 </html>
