@@ -6,6 +6,13 @@
   font-family: "Poppins", sans-serif;
 }
 
+.informacao {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .background {
   background: linear-gradient(to top left,
       #ffecce 40%,
@@ -19,10 +26,11 @@
 }
 
 .navbar {
-  grid-template-columns: 1fr 1fr;
   display: flex;
+  justify-content: center;
   align-items: center;
   padding: 15px;
+  padding-bottom: 5px;
 }
 
 .nav-left {
@@ -30,8 +38,6 @@
   align-items: center;
   gap: 20px;
 }
-
-
 
 .close-btn {
   display: none;
@@ -41,10 +47,8 @@
 }
 
 .nav-right {
-  align-items: center;
   display: flex;
   gap: 5px;
-  padding-right: 8vw;
   width: 100%;
   max-width: 1200px;
   box-sizing: border-box;
@@ -57,7 +61,7 @@
   border-radius: 10px;
   padding-left: 10px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 800px;
   box-sizing: border-box;
 }
 
@@ -66,9 +70,15 @@
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  font-size: 18px;
-  padding: 10px 20px;
+  font-size: 16px;
+  padding: 10px 25px;
+
   height: 34px;
+  width: 34px;              /* opcional, deixa redondo */
+  
+  display: flex;            /* 🔥 chave */
+  align-items: center;      /* centro vertical */
+  justify-content: center; 
 }
 
 .responsivo {
