@@ -24,6 +24,8 @@
 
 .frete {
   font-weight: bold;
+  text-transform: uppercase;
+
 }
 
 .background {
@@ -32,12 +34,7 @@
       #e6d3b1);
 }
 
-.sandrinha img {
-  height: 150px;
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 .navbar {
   display: flex;
@@ -47,6 +44,12 @@
   padding-bottom: 5px;
 }
 
+.sandrinha img {
+  height: 100px;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .nav-left {
   display: flex;
   align-items: center;
@@ -64,11 +67,10 @@
   display: flex;
   gap: 5px;
   width: 100%;
-  max-width: 1200px;
   box-sizing: border-box;
 }
 
-.nav-right .search-input {
+.search-input {
   font-size: 16px;
   height: 34px;
   border: none;
@@ -88,10 +90,10 @@
   padding: 10px 25px;
 
   height: 34px;
-  width: 34px;              /* opcional, deixa redondo */
+  width: 34px;              
   
-  display: flex;            /* 🔥 chave */
-  align-items: center;      /* centro vertical */
+  display: flex;           
+  align-items: center;      
   justify-content: center; 
 }
 
@@ -224,14 +226,14 @@
 
 .slider{
   position: relative;
-  width: 1200px;
+  width: 100%;
   margin: auto;
 
 }
 
 .slides{
   display:flex;
-  width:100%;
+  max-width: 1200px;
   transition: transform 0.4s ease;
 }
 
@@ -240,15 +242,16 @@
   flex-shrink:0;
 }
 
-/* só pra deixar os botões bonitos */
+
 .btn-prev,
 .btn-next{
   position:absolute;
   top:50%;
   transform:translateY(-50%);
-  background:black;
+  background: rgb(0, 0, 0, 0.5);
   color:white;
   border:none;
+  border-radius:10%;
   padding:10px;
   cursor:pointer;
 }
@@ -262,6 +265,33 @@
   right:10px;
 }
 
+
+@media (max-width: 768px) {
+.slider{
+  position: relative;
+  width: 100%;
+  margin: auto;
+
+}
+
+.slides{
+  display:flex;
+  max-width: 1200px;
+  transition: transform 0.4s ease;
+}
+
+.slide{
+  min-width:100%;
+  flex-shrink:0;
+  }
+
+
+  .btn-prev,
+  .btn-next {
+    padding: 5px;
+    font-size: 14px;
+  }
+}
 
 .melhor {
   display: flex;
