@@ -50,6 +50,31 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+@media (max-width: 1100px) { 
+  .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  padding-bottom: 5px;
+  }
+
+  .carrinho {
+    display: flex;
+    margin-left: auto;-
+  }
+
+  .sandrinha img {
+    height: 80px;
+    width: 180px;
+  }
+
+  .nav-right {
+    max-width: 60%;
+  }
+}
+
 .nav-left {
   display: flex;
   align-items: center;
