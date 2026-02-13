@@ -62,7 +62,7 @@
 
   .carrinho {
     display: flex;
-    margin-left: auto;-
+    margin-left: auto;
   }
 
   .sandrinha img {
@@ -71,7 +71,7 @@
   }
 
   .nav-right {
-    max-width: 60%;
+    max-width: 100%;
   }
 }
 
@@ -319,11 +319,18 @@
 }
 
 .melhor {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 50px;
+  gap: 60px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 60px 20px;
+}
+
+.melhor h1 {
+  font-size: 48px;
+  
 }
 
 .texto .imagem {
